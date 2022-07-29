@@ -26,7 +26,7 @@ public class Employee_Service_impl implements Employee_Service {
     public EmployeeInfo addEmployee(EmployeeInfo newDetails) {
         emprecords.save(newDetails);
         List<EmployeeInfo> ei = emprecords.findAll();
-        ei.forEach(System.out :: println);
+//        ei.forEach(System.out :: println);
         return newDetails;
     }
 
